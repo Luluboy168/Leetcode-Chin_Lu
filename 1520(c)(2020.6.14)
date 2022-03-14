@@ -1,0 +1,13 @@
+int numIdenticalPairs(int* nums, int numsSize){
+    int ans=0;
+    for(int i;i<numsSize-1;i++){
+        for(int j=i+1;j<numsSize;j++){
+            if(nums[i]==nums[j]){
+                ans++;
+            }
+        }
+    }
+    
+    return ans;
+
+}

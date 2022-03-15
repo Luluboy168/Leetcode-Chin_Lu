@@ -13,7 +13,3 @@ int countMatches(char *** items, int itemsSize, int* itemsColSize, char * ruleKe
     }
     return count;
 }
-/**Runtime: 101 ms, faster than 14.65% of C online submissions for Count Items Matching a Rule.
-
-Memory Usage: 13.6 MB, less than 77.59% of C online submissions for Count Items Matching a Rule.
-10/2

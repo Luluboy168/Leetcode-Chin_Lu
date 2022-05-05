@@ -11,14 +11,14 @@ class Solution:
         if not root:
             return True
         
-        def rec(left, right):
+        def compare(left, right):
             if not left or not right:
                 if not left and not right:
                     return True 
                 return False
             elif left.val == right.val:
-                return rec(left.left, right.right) and rec(left.right, right.left)
+                return compare(left.left, right.right) and compare(left.right, right.left)
             else:
                 return False
             
-        return rec(root.left, root.right)
+        return compare(root.left, root.right)

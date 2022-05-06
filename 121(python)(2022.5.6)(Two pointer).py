@@ -2,6 +2,7 @@ class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         
         #Two pointer
+        #使用雙層迴圈會超過時間
         left = 0
         right = 1
         max_profit = 0
